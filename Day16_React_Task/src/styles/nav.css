@@ -1,0 +1,83 @@
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 2rem;
+    height: 70px;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav .device-icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav .device-icons .icon-wrapper {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+nav .device-icons .icon-wrapper img {
+    width: 40px;
+    display: block;
+}
+
+nav .device-icons .icon-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #008a40;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+nav .device-icons .icon-wrapper:hover::after {
+    transform: scaleX(1);
+}
+
+nav .device-icons .icon-wrapper:hover {
+    transform: scale(1.1);
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .left .txt {
+    font-size: 14px;
+    text-align: center;
+}
+
+nav .left .btn button {
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    background-color: #008a40;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav .left .btn button:hover {
+    background-color: #04b355;
+}
