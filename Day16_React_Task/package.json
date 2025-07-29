@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/Abd-ErrahmanAbuAl-Hassan/React_Task_Day01",
+  "homepage": "https://Abd-ErrahmanAbuAl-Hassan.github.io/React_Task_Day01",
   "name": "package",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.0",
